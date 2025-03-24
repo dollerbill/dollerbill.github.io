@@ -1,18 +1,125 @@
-body {
-    margin: 2em;
-    max-width: 860px;
-    font-family: "Cambay", serif;
+/* Modern, Clean Resume Styling */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --light-gray: #f5f7fa;
+  --border-color: #e0e0e0;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cambay", sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--background-color);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Header Styling */
 h1 {
-    text-align: center;
-    color: #4F81BD;
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
 h2 {
-    color: #4F81BD;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
+h3 {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Contact Info */
 #contact {
-    text-align: center;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+#contact a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin: 0 0.7rem;
+  transition: color 0.2s ease;
+}
+
+#contact a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* Summary Section */
+#summary {
+  background-color: var(--light-gray);
+  padding: 1.5rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+#summary h2 {
+  margin-top: 0;
+}
+
+/* Experience Lists */
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.7rem;
+  position: relative;
+}
+
+/* Education */
+#education {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+strong {
+  color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+  }
+  
+  h3 {
+    font-size: 1.1rem;
+  }
 }
